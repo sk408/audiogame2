@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audiogram Game by Stephen Kanney</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        Double click or press S to store threshold. 
+    </div>
+    <div class="canvas-container">
+        <canvas id="gridCanvas1"></canvas>
+        <div id="scoreDisplay1">Score: 0</div>
+        <button id="decibelIndicator1">Decibel Level: N/A</button>
+        <button id="randomButton1">Response</button>
+        <br>
+        <button onclick="updateGrid('1')" style="display: none;">Update Grid</button>
+    </div>
+    <div class="canvas-container">
+        <canvas id="gridCanvas2"></canvas>
+        <div id="scoreDisplay2">Score: 0</div>
+        <button id="decibelIndicator2">Decibel Level: N/A</button>
+        <button id="randomButton2">Response</button> <br>
+        <button onclick="updateGrid('2')" style="display:none;">Update Grid</button>
+    </div>
+    <script src="audioManager.js"></script>
+    <script src="canvasLogic.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
