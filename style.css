@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#gridCanvas1,
+#gridCanvas2 {
+    border: 1px solid black;
+}
+
+@keyframes flash {
+    0% { background-color: transparent; }
+    50% { background-color: rgb(11, 154, 193); }
+    100% { background-color: transparent; }
+}
+
+#decibelIndicator1.flashing,
+#decibelIndicator2.flashing {
+    animation: flash 0.6s infinite;
+    background-color: rgb(46, 158, 228);
+}
+
+.flashing {
+    animation: flash 0.2s infinite;
+}
+
+#randomButton1.lightUp,
+#randomButton2.lightUp {
+    background-color: #00ff00;
+}
